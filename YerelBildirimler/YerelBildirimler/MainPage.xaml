@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="YerelBildirimler.MainPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+ios:Page.UseSafeArea="true"
+>
+
+    <StackLayout Margin="0,35,0,0"
+             x:Name="stackLayout">
+        <Label Text="Yerel bildirim oluşturmak için butona tıklayınız."
+           TextColor="Red"
+           HorizontalOptions="Center"
+           VerticalOptions="Start" />
+        <Button Text="Bildirim Oluştur"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>
